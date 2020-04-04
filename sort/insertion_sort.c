@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void printArray(int array[], int start, int end)
+void printArray(int array[], int len)
 {
-    int i = start;
-    for(i = start; i <= end; i++)
+    int i = 0;
+    for(i = 0; i < len; i++)
     {
         printf("%d ", array[i]);
     }
@@ -35,5 +35,5 @@ int main()
 {
     int array[10] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
     insert(array, 0, 9);
-    printArray(array, 0, 9);
+    printArray(array, 10);
 }
