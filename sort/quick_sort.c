@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void printArray(int array[], int start, int end)
+void printArray(int array[], int len)
 {
-    int i = start;
-    for(i = start; i <= end; i++)
+    int i = 0;
+    for(i = 0; i < len; i++)
     {
         printf("%d ", array[i]);
     }
@@ -56,12 +56,12 @@ int main(void) {
     int arrayC[10] = {1, 1, 1, 1, 1, 0, 0, 0, 0, 0};
     
     QUICK_SORT(arrayA, 0, 9);
-    printArray(arrayA, 0, 9);
+    printArray(arrayA, 10);
     
     QUICK_SORT(arrayB, 0, 9);
-    printArray(arrayB, 0, 9);
+    printArray(arrayB, 10);
     
     QUICK_SORT(arrayC, 0, 9);
-    printArray(arrayC, 0, 9);
+    printArray(arrayC, 10);
     return 0;
 }
